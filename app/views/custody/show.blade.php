@@ -118,7 +118,7 @@
       <p>{{ $custody->html_log }}</p>
     @endif
 
-    @if($custody->signed == 1 && $custody->signature == 1)
+    @if($custody->signed == 1 && $custody->signature == 1 && $custody->returned == 1)
       <hr />
       <h4 style="text-decoration:underline;">Ondertekening retour opdrachtgever</h4>
       <table>
