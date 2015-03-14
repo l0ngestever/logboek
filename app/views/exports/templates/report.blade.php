@@ -283,6 +283,14 @@
           <th>Handtekening</th>
           <td><img style="border:1px solid black;" style="border:1px;" width="300px;" alt="" src="<?php echo $key->signature_sign; ?>" /></td>
         </tr>
+				@if($key->html_log != '')
+					<tr>
+						<th colspan="2">Logs</th>
+					</tr>
+					<tr>
+						<td colspan="2">{{ $key->html_log }}</td>
+					</tr>
+				@endif
 			</table>
 			@endforeach
 	</div>
