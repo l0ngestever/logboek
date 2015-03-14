@@ -42,7 +42,7 @@
 				<?php
 					$modalBody;
 					if($task->description == '') {
-						$modalBody = '<i>Geen beschrijving gevonden.</i>';
+						$modalBody = 'Geen beschrijving gevonden.';
 					} else {
 						$modalBody = $task->description;
 					}
