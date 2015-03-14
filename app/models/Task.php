@@ -43,11 +43,11 @@ class Task extends Model {
 	// Scopes
 
 	public function scopeNewest($query) {
-		return $query->orderBy('deadline', 'desc');
+		return $query->orderBy('status','asc')->orderBy('deadline', 'desc');
 	}
 
 	public function scopeOldest($query) {
-		return $query->orderBy('deadline', 'asc');
+		return $query->orderBy('status','asc')->orderBy('deadline', 'asc');
 	}
 
 	public function scopeOpen($query) {

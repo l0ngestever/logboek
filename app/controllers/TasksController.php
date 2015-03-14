@@ -19,7 +19,7 @@ class TasksController extends \BaseController {
 	 * @return Response
 	 */
 	public function index() {
-		$tasks = Task::newest()->paginate(static::$per_page);
+		$tasks = Task::oldest()->paginate(static::$per_page);
 		return View::make('tasks.index', ['tasks' => $tasks]);
 	}
 

@@ -26,7 +26,7 @@ class BaseController extends Controller {
 		}
 
 		View::share('recent_tasks', Task::open()
-			->newest()
+			->oldest()
 			->take(5)->get());
 	}
 }
