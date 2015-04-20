@@ -280,7 +280,7 @@
           <td>{{ $key->signature_time }}</td>
         </tr>
 				<tr>
-          <th>Handtekening</th>
+          <th valign="top">Handtekening</th>
           <td><img style="border:1px solid black;" style="border:1px;" width="300px;" alt="" src="<?php echo $key->signature_sign; ?>" /></td>
         </tr>
 				@if($key->html_log != '')
